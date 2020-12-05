@@ -75,7 +75,9 @@ export default function Feedback(props) {
   }, [message]);
 
   return (
-    <div className="vw-100 vh-100 bg-primary d-flex align-items-center justify-content-center ">
+    <div className="vw-100 vh-100 d-flex align-items-center justify-content-center position-relative"
+      style={{background: "#edf1f7"}}>
+      <div className="vw-100 bg-primary position-absolute" style={{top: "0", height: "55vh"}}></div>
       <Col lg="4" md="6" sm="12">
         <Card className="rounded-0 border-0 shadow">
           <Card.Header className="border-bottom-0" style={{background: "#edf1f7"}}>

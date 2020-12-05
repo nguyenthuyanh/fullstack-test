@@ -16,6 +16,7 @@ export default function Feedback(props) {
   const [infoValid, setInfoValid] = useState(false);
   const [messageValid , setMessageValid ] = useState(false);
 
+  // Go to next form
   const nextClick = () => {
     if (infoValid)
       setCurrentStep(2)
@@ -58,6 +59,7 @@ export default function Feedback(props) {
       });
   }
 
+  // Update info validation status
   useEffect(() => { if (firstName.trim() !== "" && lastName.trim()
     !== "" && email.trim() !== "" && email.match(/^(.+)@(.+)$/))
     setInfoValid(true)
@@ -65,6 +67,7 @@ export default function Feedback(props) {
     setInfoValid(false)
   }, [firstName, lastName, email]);
 
+  // Update message validation status
   useEffect(() => { if (message.trim() !== "")
     setMessageValid(true)
   else

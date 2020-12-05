@@ -41,10 +41,13 @@ gem 'react-rails'
 gem "bootstrap", "~> 4.5.3"
 gem "will_paginate"
 
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
   gem "pry"
+  gem "rspec-rails"
+  gem "faker"
 end
 
 group :development do

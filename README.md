@@ -43,6 +43,10 @@ rake db:migrate
 rails s
 ```
 
+Running test
+
+`rspec`
+
 ## Additional notes
 
 You don't have a time limit to finish.

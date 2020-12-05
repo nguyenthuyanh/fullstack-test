@@ -22,24 +22,30 @@ You'll have to make a three steps satisfaction form with [Ruby on Rails](https:/
 5. There shouldn't be a (real) page reload between two steps.
   * (We're using [React's function components](https://reactjs.org/docs/components-and-props.html#function-and-class-components) here at We Link)
   * ([React Rails](https://github.com/reactjs/react-rails) can be useful)
-  
+
 6. Make it fancy (at least less ugly than my wireframe)
 
 7. Now allow the `/feedback` route to accept a GET request
   * with two parameters: `p` and `n` (eg: http://localhost/feedback?p=1&n=10), the response will be a JSON document containing a set of messages depending of the params, p=1 and n=10 will return messages 1 to 10, p=3 and n=15 will return messages 46 to 60.
   * If no param is provided, or if you got only one of the two, return a JSON document containing all messages.
-  
+
 8. Last route will be `feedback/:id` and will return a JSON document containing the message with the given ID.
 
 9. Fill the below install section of this README with what I'll have to do to run your app locally.
 
 ## Install
 
-You tell me.
+```
+git clone https://github.com/nguyenthuyanh/fullstack-test.git
+bundle install
+rake db:create
+rake db:migrate
+rails s
+```
 
 ## Additional notes
 
-You don't have a time limit to finish. 
+You don't have a time limit to finish.
 
 If you struggle, do the most that you can, I'll be glad to talk with you about what went wrong.
 

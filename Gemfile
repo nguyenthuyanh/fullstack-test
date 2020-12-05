@@ -39,6 +39,7 @@ gem 'bootsnap', '>= 1.1.0', require: false
 gem 'webpacker'
 gem 'react-rails'
 gem "bootstrap", "~> 4.5.3"
+gem "will_paginate"
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console

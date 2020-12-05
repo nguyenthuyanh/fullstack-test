@@ -40,12 +40,15 @@ git clone https://github.com/nguyenthuyanh/fullstack-test.git
 bundle install
 rake db:create
 rake db:migrate
+yarn install
 rails s
 ```
 
 Running test
 
-`rspec`
+```
+rspec
+```
 
 ## Additional notes
 
